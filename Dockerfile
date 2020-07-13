@@ -1,9 +1,4 @@
-FROM ubuntu
-
+FROM httpd
 MAINTAINER pratikpande72@gmail.com
-
-RUN apt-get update
-
-RUN apt-get install openjdk -y
-
-RUN echo "WELCOME" > /var/test.doc
+RUN cd /var/www/
+RUN echo "pipeline sucess" >  index.html
